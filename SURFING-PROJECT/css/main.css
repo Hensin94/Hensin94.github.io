@@ -1,0 +1,402 @@
+body {
+
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*=================================================NAVIGATION=================================================*/
+
+
+
+.nav-wrapper {
+    padding-top: 30px;
+    width:100%;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 220px;
+}
+
+
+
+
+
+.nav__item {
+    color: #aaaaaa;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-right: 60px;
+    text-decoration: none;
+
+}
+
+.nav__item:hover {
+    color: #111111;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+/*=================================================HEADER=================================================*/
+
+.header-wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 230px;
+    height: 500px;
+}
+.header__content {
+    margin-bottom: 230px;
+    padding-top: 210px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255)
+}
+
+.header-description {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.06px;
+    line-height: 1.8;
+    text-align: center;
+
+}
+
+.header-description p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.heder__title {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.57px;
+}
+
+
+/*=================================================REVIEWS=================================================*/
+
+.reviews {
+    width: 260px;
+
+
+}
+
+.reviews__title {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.29px;
+    margin-bottom: 45px;
+}
+
+.review-item {
+
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgb(226, 215, 215);
+    padding-bottom: 15px;
+    z-index: -1;
+}
+
+.review-item:before {
+    position: absolute;
+    top: 0;
+    left: -18px;
+    content: "";
+    width: 36px;
+    height: 29px;
+    display: block;
+    background-image: url(/img/icons/quote.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.review-item__text {
+    color: #575757;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review-item__author {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+/*===========================================VIDEO===========================================*/
+.video {
+    width: 280px;
+}
+
+.video__title {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.29px;
+    margin-bottom: 25px;
+}
+
+.video__item {
+    position: relative;
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+
+
+.play__icon {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 50px;
+
+}
+
+.play__icon:before {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -4px;
+    margin-top: 20.5px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5.5px solid transparent;
+    border-left: 8px solid #000000;
+    border-bottom: 5.5px solid transparent;
+}
+
+.video__item .play__icon {
+    position: absolute;
+    left: -10px;
+    bottom: -15px;
+}
+
+.video-centre {
+    position: relative;
+}
+
+.video-centre .play__icon {
+    position: absolute;
+    left: 24px;
+    bottom: 32px;
+}
+
+.container {
+    width: 1050px;
+
+}
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 0.41px;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+/*===========================================INSTRUCTOR===========================================*/
+.instructor_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 255px;
+}
+
+.instructor {
+    text-align: center;
+}
+
+.instructor__photo {
+    margin-bottom: 30px;
+
+}
+
+.instructor__name {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    margin-bottom: 10px;
+}
+
+.instructor__students {
+    color: #2ab738;
+    font-size: 15px;
+    font-weight: 500;
+
+    letter-spacing: 0.14px;
+}
+
+/*===========================================BLOG===========================================*/
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 190px;
+}
+
+.blog-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.blog-item:last-child {
+    margin-bottom: 250px;
+}
+
+
+.blog-item__content {
+    width: 450px;
+}
+
+.blog-item__header {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-style: italic;
+    letter-spacing: 0.33px;
+    margin-bottom: 25px;
+}
+
+.blog-item__desc {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.06px;
+    margin-bottom: 35px;
+}
+
+.blog-item__desc p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.blog-item__readmore {
+    display: inline-block;
+    height: 52px;
+    border: 1px solid #e5e5e5;
+    padding: 16px 30px 0;
+    line-height: 1;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    text-decoration: none;
+}
+
+.blog-item__readmore:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.text-center {
+    text-align: center;
+}
+.cta-section{
+    margin-bottom: 145px;
+}
+
+.button{
+    display: inline-block ;
+    height: 56px;
+    line-height: 1;
+    padding: 18px 45px ;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    border: 1px solid #41475b;
+    background-color: #fff;
+
+   
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: #000;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+/*===========================================FOOTER===========================================*/
+
+.footer{
+border-top: 1px solid #f2ede7;
+padding: 48px 0 38px;
+}
+
+.footer-container{
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright{
+
+}
+.footer-copyright__title{
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+
+
+}
+.footer-copyright__text{
+color: #9f9f9f;
+font-size: 14px;
+font-weight: 400;
+line-height: 2;
+}
+.footer-designedby{
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Avenir;
+    line-height: 36px;
+}
+strong{
+    color: #000000;
+    font-weight: 600;
+}
+
+
+
+
